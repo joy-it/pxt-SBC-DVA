@@ -1,9 +1,7 @@
-# MakeCode Package for the PCA9634 8-bit Fm+ I2C-bus LED driver 
+# MakeCode Package for the ina236 High-precision digital I²C monitoring module for current (48 V, 16 bit)
 
 This library provides a Microsoft Makecode package for the PCA9634 8-bit Fm+ I2C-bus LED driver.
-See **https://joy-it.net/products/SBC-MotoDriver3** for more details.
-
-Derived from the pca9634-lib (**https://github.com/NickvanTholen/pca9634-lib**) by Nickvan Tholen (**https://github.com/NickvanTholen**).
+See **https://joy-it.net/products/SBC_DVA** for more details.
 
 ## Behaviour considered to be a pass
 As long as the microcontroller or single board computer still finds the I2C addresses of the INA236 (0x40 is the I2C address, can be changed on the board).
