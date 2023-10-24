@@ -179,6 +179,19 @@ The block `Set the alert register to (...)` allows to choose between 10 differen
 INA236.mask_enable(ina236MaskEnable.One)
 ```
 
+## Write to the alert register
+The `Write (...) into the alert register` block enables writing to the alert register of the INA236.
+```typescript
+// Write to the alert register of the INA236.
+// Depending on the register that is choosen in the 'mask_enable' block values can be writen into the register using this block.
+// It is important to note how large the values may be and in what format they must be written.
+// All values must be given as hex numbers or as two's complement hex numbers like the 'SOL (Shunt Over-limit)' option of the 'mask_enable' block.
+// All other options of the block 'mask_enable' take normal hex numbers, but the numbers must be calculated as in the library or
+// as in the datasheet otherwise the alert register cannot work properly with them.
+// Default initialization with '0x294'
+INA236.write_alert_limit(660)
+```
+
 ## Read from the alert register
 The `Read from the alert register` block enables reading from the alert register of the INA236.
 ```typescript
