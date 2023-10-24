@@ -569,7 +569,7 @@ namespace INA236 {
     //% color="#275C6B" weight=55 blockGap=8
     export function read_current() {
         let CURRENT = _read_register(Current_Reg)
-        return (Current_lsb * CURRENT)
+        return Math.roundWithPrecision((Current_lsb * CURRENT), 4)
     }
 
     /**
@@ -579,7 +579,7 @@ namespace INA236 {
     //% color="#275C6B" weight=50 blockGap=8
     export function read_power() {
         let POWER = _read_register(Power_Reg)
-        return Math.abs((32 * Current_lsb * POWER))
+        return Math.roundWithPrecision(Math.abs((32 * Current_lsb * POWER)), 4)
     }
 
     /**
@@ -591,7 +591,7 @@ namespace INA236 {
         let value_raw = _read_register(Shunt_Volt_Reg)
         let value_comp = ~value_raw
         let value = value_comp + 1
-        return Math.abs(value * Lsb)
+        return Math.roundWithPrecision(Math.abs(value * Lsb), 4)
     }
 
     /**
@@ -601,7 +601,7 @@ namespace INA236 {
     //% color="#275C6B" weight=40 blockGap=8
     export function read_bus_voltage() {
         let value = _read_register(Bus_Volt_Reg)
-        return value * _LSB[2]
+        return Math.roundWithPrecision((value * _LSB[2]), 4)
     }
 
     /**
