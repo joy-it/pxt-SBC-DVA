@@ -552,9 +552,9 @@ namespace INA236 {
     //% blockId="INA236_CALIBRATE" block="Calibrate the INA236"
     //% color="#275C6B" weight=60 blockGap=8
     export function calibrate_ina236() {
-        let current_lsb_min = 5 / (Math.pow(2, 15))
-        Current_lsb = current_lsb_min + 0.0000074
-        let SHUNT_CAL = 0.00512 / (Current_lsb * 0.016)
+        let current_lsb_min = 10 / (Math.pow(2, 15))
+        Current_lsb = current_lsb_min + 0.0018
+        let SHUNT_CAL = 0.00512 / (Current_lsb * 0.008)
         SHUNT_CAL = Math.trunc(SHUNT_CAL)
         if (Adcrange == ADCRANGE_2) {
             SHUNT_CAL = SHUNT_CAL / 4
