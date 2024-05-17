@@ -11,8 +11,8 @@
     "files": [
         "SBC-DVA.ts",       
         "README.md",
-        "_locales/de/pxt-SBC_MotoDriver3-strings.json",
-        "_locales/de/pxt-SBC_MotoDriver3-jsdoc-strings.json"
+        "_locales/de/pxt-SBC_DVA-strings.json",
+        "_locales/de/pxt-SBC_DVA-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
