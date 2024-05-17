@@ -11,8 +11,8 @@
     "files": [
         "SBC-DVA.ts",       
         "README.md",
-        "_locales/de/pxt-SBC_DVA-strings.json",
-        "_locales/de/pxt-SBC_DVA-jsdoc-strings.json"
+        "_locales/de/pxt-SBC-DVA-strings.json",
+        "_locales/de/pxt-SBC-DVA-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
