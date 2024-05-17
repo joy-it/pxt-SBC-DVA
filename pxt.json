@@ -2,6 +2,7 @@
     "name": "pxt-SBC-DVA",
     "version": "1.0.0",
     "description": "MakeCode package for the SBC-DVA",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
         "radio": "*",
